@@ -1,0 +1,12 @@
+{
+    "name": "marcosmth/teste-conves-web",
+    "description": "Desenvolvimento de uma API em PHP, para gereciamento de veículos",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Marcos M. Junior",
+            "email": "marcos.m.junior@hotmail.com"
+        }
+    ],
+    "require": {}
+}
