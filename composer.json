@@ -1,12 +1,28 @@
 {
     "name": "marcosmth/teste-conves-web",
-    "description": "Desenvolvimento de uma API em PHP, para gereciamento de veículos",
+    "description": "Sistema de Gerenciamento Veicular",
     "type": "project",
+    "minimum-stability": "stable",
+    "license": "MIT",
     "authors": [
         {
             "name": "Marcos M. Junior",
-            "email": "marcos.m.junior@hotmail.com"
+            "email": "marcos.m.junior@hotmail.com",
+            "role": "Developer"
         }
     ],
-    "require": {}
+    "config":{
+        "vendor-dir": "vendor"
+    },
+    "autoload":{
+        "psr-4":{
+            "Source\\":"src/"
+        },
+        "files":[
+        "src/Config.php"
+        ]
+    },
+    "require": {
+        "coffeecode/router": "1.0.7"
+    }
 }

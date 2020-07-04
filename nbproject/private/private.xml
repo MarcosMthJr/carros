@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/marcosmth/Projects/testeConvesWeb/config/PdoClass.php</file>
-            <file>file:/home/marcosmth/Projects/testeConvesWeb/Models/Carro.php</file>
+            <file>file:/home/marcosmth/Projects/testeConvesWeb/src/Class/Carro.php</file>
+            <file>file:/home/marcosmth/Projects/testeConvesWeb/src/Class/PdoClass.php</file>
+            <file>file:/home/marcosmth/Projects/testeConvesWeb/index.php</file>
+            <file>file:/home/marcosmth/Projects/testeConvesWeb/src/Class/CarroController.php.oho</file>
         </group>
     </open-files>
 </project-private>

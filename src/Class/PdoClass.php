@@ -1,11 +1,5 @@
 <?php
-/**
- * Classe de conexão ao banco de dados usando PDO no padrão Singleton.
- * Modo de Usar:
- * require_once './Database.class.php';
- * $db = Database::conexao();
- * E agora use as funções do PDO (prepare, query, exec) em cima da variável $db.
- */
+
 class Database
 {
     # Variável que guarda a conexão PDO.
@@ -15,11 +9,11 @@ class Database
     private function __construct()
     {
         # Informações sobre o banco de dados:
-        $db_host = "localhost";
-        $db_nome = "convesWeb";
-        $db_usuario = "root";
-        $db_senha = "";
-        $db_driver = "mysql";
+       $db_driver = DB_DRIVER;
+       $db_host = DB_HOST;
+       $db_name = DB_NAME;
+       $db_usuario = DB_USER;
+       $db_senha = DB_PASSWORD;
 
         # Informações sobre o sistema:
         $sistema_titulo = "Catálogo de carros.";
@@ -28,7 +22,7 @@ class Database
         try
         {
             # Atribui o objeto PDO à variável $db.
-            self::$db = new PDO("$db_driver:host=$db_host; dbname=$db_nome", $db_usuario, $db_senha);
+            self::$db = new PDO("$db_driver:host=$db_host; dbname=$db_name", $db_usuario, $db_senha);
             # Garante que o PDO lance exceções durante erros.
             self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             # Garante que os dados sejam armazenados com codificação UFT-8.

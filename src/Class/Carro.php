@@ -1,6 +1,6 @@
 <?php
 
-require_once '../config/PdoClass.php';
+require __DIR__ . '/PdoClass.php';
 
 class Carro {
 
@@ -11,40 +11,15 @@ class Carro {
     private $potencia;
     private $valor;
 
-    public function __construct($id, $modelo, $ano, $marca, $potencia, $valor) {
-        $this->setId($id);
+    public function __construct($modelo, $ano, $marca, $potencia, $valor) {
+
         $this->setModelo($modelo);
         $this->setAno($ano);
         $this->setMarca($marca);
         $this->setPotencia($potencia);
         $this->setValor($valor);
-        
-    }
-    
-    public function falar() {
-        echo "{$this->getId()}, {$this->getAno()}";
     }
 
-  /*  public function insertCar() {
-        $conn = Database::conexao();
-        $sql = "INSERT INTO carro(modelo, ano, marca, potencia, valor) values (?,?,?,?,?)";
-
-        $stmt = $conn->prepare($sql);
-
-        try {
-            $stmt->bindValue(1, $this->getModelo());
-            $stmt->bindValue(2, $this->getAno());
-            $stmt->bindValue(3, $this->getMarca());
-            $stmt->bindValue(4, $this->getPotencia());
-            $stmt->bindValue(5, $this->getValor());
-            $stmt->execute();
-
-            // se deu certo, manda o json do ultimo registo para inserir no array da lista
-            // se der errado, mandar o erro via json e o codigo do status da requisição que deu ruim
-        } catch (PDOException $ex) {
-            echo 'Erro ao conectar no banco!' . $ex;
-        }
-    }*/
 
     function getId() {
         return $this->id;
