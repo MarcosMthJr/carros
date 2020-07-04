@@ -9,7 +9,10 @@ use CoffeeCode\Router\Router;
 $router = new Router(URL_BASE);
 
 $router->group(null);
-
+$router->get("/", function ($data) {
+include __DIR__.'/src/View/paginaInicial.php';
+ 
+});
     
 $router->get("/carro", function ($data) {
     
