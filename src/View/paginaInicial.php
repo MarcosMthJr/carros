@@ -15,6 +15,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
   <link rel="stylesheet" href="src/View/css/custom.css">
   <title>Gerenciamento Veicular</title>
 </head>
@@ -91,7 +93,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form name="formPost">
+        <form name="formInsertCar">
           <div class="form-row">
               <div class="col-6">
                 <input type="text" name="modelo"  class="form-control inputModal" placeholder="Modelo">
@@ -112,13 +114,15 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <span id="warning"></span>
+          <button type="button" class="btn btn-secondary btnModalClose" data-dismiss="modal">Fechar</button>
           <input type="submit" class="btn btn-primary" value="Cadastrar">
         </div>
       </form>
     </div>
   </div>
 </div>
+<script src="src/View/scripts/inserirCarro.js"></script>
 </body>
 
 </html>
