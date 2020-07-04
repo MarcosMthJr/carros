@@ -1,8 +1,8 @@
 <?php
 
 require __DIR__ . "/vendor/autoload.php";
-require_once __DIR__ . '/src/Class/Carro.php';
-require_once __DIR__ . '/src/Class/CarroController.php';
+require_once __DIR__ . '/src/Model/Carro.php';
+require_once __DIR__ . '/src/Controller/CarroController.php';
 
 use CoffeeCode\Router\Router;
 
@@ -11,14 +11,14 @@ $router = new Router(URL_BASE);
 $router->group(null);
 
     
-$router->get("/", function ($data) {
+$router->get("/carro", function ($data) {
     
     $ctrlCAr = new CtrlCarro(); 
-    $searchDB = $ctrlCAr->searchCar($data['id']);
+    $carsFound = $ctrlCAr->listCars();
     
-    if($searchDB == true){
+    if($carsFound == true){
         http_response_code(200);
-        echo json_encode($searchDB);
+        echo json_encode($carsFound);
     }else{
         http_response_code(404);
     }

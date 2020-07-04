@@ -1,20 +1,16 @@
 <?php
-require_once __DIR__ . '/Carro.php';
-require_once __DIR__ . '/PdoClass.php';
-class CtrlCarro{
-    
-    
+require_once 'src/Model/Carro.php';
+require_once 'src/Config/PdoClass.php';
+class CtrlCarro{    
     public function listCars() {
         $conn = Database::conexao();
-        $sql = "SELECT id, modelo, ano, marca, potencia, valor FROM carro where id= ?";
+        $sql = "SELECT id, modelo, ano, marca, potencia, valor FROM carro";
         $stmt = $conn->prepare($sql);
 
-        try {
-            $stmt->bindValue(1, $searchId);
-            
+        try {          
             if ($stmt->execute()) {
-                $carFound = $stmt->fetch();
-                return $carFound;
+                $carsFound = $stmt->fetchAll();
+                return $carsFound;
             } else {
                return 0;
             }

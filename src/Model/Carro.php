@@ -1,7 +1,6 @@
 <?php
 
-require __DIR__ . '/PdoClass.php';
-
+require_once 'src/Controller/CarroController.php';
 class Carro {
 
     private $id;
