@@ -69,15 +69,15 @@ composer install
  <p>Rota para inserir um carro</p>
  Method: <b>POST</b>
  
-      localhost/testeConvesWeb/carro
+     http://localhost/testeConvesWeb/carro
  
 <p>Rota para listar todos os carros</p>
  Method: <b>GET</b>
  
-      localhost/testeConvesWeb/carro
+      http://localhost/testeConvesWeb/carro
   
 <p>Rota para buscar por um carro especificando o id</p>
  Method: <b>GET</b>
 
-      localhost/testeConvesWeb/carro/{$id} 
+     http://localhost/testeConvesWeb/carro/{$id} 
 
