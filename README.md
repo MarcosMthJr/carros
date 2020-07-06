@@ -2,7 +2,7 @@
 ## Descrição do Projeto
 <p align="justify">Basicamente é um sistema que possui uma tabela de carros e podemos manipular as informações dessa tabela através da uma API criada em PHP</p>
 <!-- foto do projeto  --->
-<img src="https://github.com/MarcosMthJr/SistemaGerenciamentoVeicular/blob/master/readmeImg/telaInicial.png?raw=true"/>
+<img src="https://github.com/MarcosMthJr/SistemaGerenciamentoVeicular/blob/master/readmeImg/demo.gif?raw=true"/>
 
 ### Principais tecnologias usadas
 <img src="https://img.shields.io/static/v1?label=PHP&message=language&color=blue&style=for-the-badge"/>
