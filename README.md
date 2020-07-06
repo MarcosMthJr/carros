@@ -2,7 +2,7 @@
 <h2>Descrição do Projeto</h2>
 <p align="justify">Basicamente é um sistema que possui uma tabela de carros e podemos manipular as informações dessa tabela através da uma API criada em PHP</p>
 <!-- foto do projeto  --->
-<img src="https://github.com/MarcosMthJr/SistemaGerenciamentoVeicular/blob/master/readmeImg/demo.gif?raw=true"/>
+<img src="https://github.com/MarcosMthJr/testeConvesWeb/blob/master/readmeImg/demo.gif?raw=true"/>
 
 ### Tabela de Conteúdos
   * [Principais tecnologias usadas](#principais-tecnologias-usadas)
@@ -32,12 +32,14 @@
 ## Como rodar a aplicação
 - No terminal navegue até o diretório onde ficam seus projetos dentro do seu apache e clone o projeto do GitHub
 ```shell
-git clone git@github.com:MarcosMthJr/SistemaGerenciamentoVeicular.git
+git clone git@github.com:MarcosMthJr/testeConvesWeb.git
 ```
 - Entre na pasta do projeto
 ```shell
-cd SistemaGerenciamentoVeicular
+cd testeConvesWeb
 ```
+<p>OBS: Caso tenha feito o download do repositório pelo zip, renomeie a pasta descompactada para <b>testeConvesWeb</b></p>
+
 - No terminal digite o comando do composer para instalar as depêndencias da aplicação.
 ```shell
 composer install
@@ -48,7 +50,7 @@ composer install
     ```shell
       localhost/phpmyadmin
     ```
-- Faça a importação do banco de dados do arquivo <p>/SistemaGerenciamentoVeicular/bancoDeDados/bancoDeDados.sql</p> no seu banco de dados local.
+- Faça a importação do banco de dados do arquivo <p>/testeConvesWeb/bancoDeDados/bancoDeDados.sql</p> no seu banco de dados local.
 
 - Modifique os valores das constantes no arquivo de configuração (src/Config.php) para acessar ao banco de dados.
     ```shell
@@ -60,7 +62,7 @@ composer install
 
 - Para executar a aplicação digite no seu navegador o endereço abaixo
    ```shell
-       localhost/SistemaGerenciamentoVeicular/
+       localhost/testeConvesWeb/
     ```
 
 ## Rotas da API
