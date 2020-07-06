@@ -4,6 +4,13 @@
 <!-- foto do projeto  --->
 <img src="https://github.com/MarcosMthJr/SistemaGerenciamentoVeicular/blob/master/readmeImg/demo.gif?raw=true"/>
 
+### Tabela de Conteúdos
+  * [Principais tecnologias usadas](#principais-tecnologias-usadas)
+  * [Principais funcionalidades](#principais-funcionalidades)
+  * [Como rodar a aplicação](#como-rodar-a-aplicação)
+  * [Rotas da API](#rotas-da-api)
+  
+
 ### Principais tecnologias usadas
 <img src="https://img.shields.io/static/v1?label=PHP&message=language&color=blue&style=for-the-badge"/>
 
@@ -42,7 +49,6 @@ composer install
       localhost/phpmyadmin
     ```
 - Faça a importação do banco de dados do arquivo <p>/SistemaGerenciamentoVeicular/bancoDeDados/bancoDeDados.sql</p> no seu banco de dados local.
-gif do banco
 
 - Modifique os valores das constantes no arquivo de configuração (src/Config.php) para acessar ao banco de dados.
     ```shell
@@ -57,4 +63,20 @@ gif do banco
        localhost/SistemaGerenciamentoVeicular/
     ```
 
+## Rotas da API
+ <p>Rota para inserir um carro</p>
+ Method: <p>POST</p>
+ ```shell
+      localhost/testeConvesWeb/carro
+  ``` 
+<p>Rota para listar todos os carros</p>
+ Method: <p>GET</p>
+ ```shell
+      localhost/testeConvesWeb/carro
+  ``` 
+<p>Rota para buscar por um carro especificando o id</p>
+ Method: <p>GET</p>
+ ```shell
+      localhost/testeConvesWeb/carro/{$id}
+  ``` 
 
