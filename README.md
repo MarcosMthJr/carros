@@ -1,5 +1,5 @@
 <h1 align="center">Gerenciamento Veicular :blue_car: </h1>
-## Descrição do Projeto
+<h2>Descrição do Projeto</h2>
 <p align="justify">Basicamente é um sistema que possui uma tabela de carros e podemos manipular as informações dessa tabela através da uma API criada em PHP</p>
 <!-- foto do projeto  --->
 <img src="https://github.com/MarcosMthJr/SistemaGerenciamentoVeicular/blob/master/readmeImg/demo.gif?raw=true"/>
@@ -21,4 +21,40 @@
 - :blue_car: Pesquisar carro por id
 
 > Status do Projeto: Concluido :heavy_check_mark:
+
+## Como rodar a aplicação
+- No terminal navegue até o diretório onde ficam seus projetos dentro do seu apache e clone o projeto do GitHub
+```shell
+git clone git@github.com:MarcosMthJr/SistemaGerenciamentoVeicular.git
+```
+- Entre na pasta do projeto
+```shell
+cd SistemaGerenciamentoVeicular
+```
+- No terminal digite o comando do composer para instalar as depêndencias da aplicação.
+```shell
+composer install
+```
+- Acesse o seu Administrador de banco de dados
+  - Por exemplo, o phpmyadmin.
+  - No seu navegador digite:
+    ```shell
+      localhost/phpmyadmin
+    ```
+- Faça a importação do banco de dados do arquivo <p>/SistemaGerenciamentoVeicular/bancoDeDados/bancoDeDados.sql</p> no seu banco de dados local.
+gif do banco
+
+- Modifique os valores das constantes no arquivo de configuração (src/Config.php) para acessar ao banco de dados.
+    ```shell
+      define( 'DB_HOST', 'localhost' );
+      define( 'DB_USER', 'root' );
+      define( 'DB_PASSWORD', '' );
+      define( 'DB_NAME', 'convesWeb');
+    ```
+
+- Para executar a aplicação digite no seu navegador o endereço abaixo
+   ```shell
+       localhost/SistemaGerenciamentoVeicular/
+    ```
+
 
