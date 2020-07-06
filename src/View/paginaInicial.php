@@ -33,10 +33,14 @@
       <li class="nav-item active" >
       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Inserir Novo Carro</button>
       </li>
-
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" >
+      <button type="button" class="btn btn-info" id="btn-refreshTable">Restaurar Tabela</button>
+      </li>
+    </ul>
+    <form name="searchCar" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" id="inputId" placeholder="Pesquisar por ID" aria-label="Pesquisar">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
     </form>
   </div>
@@ -55,30 +59,7 @@
     </tr>
   </thead>
   <tbody class="corpoTabela">
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
+    
 
   </tbody>
 </table>
@@ -110,7 +91,7 @@
               <input type="text"  name="ano" class="form-control inputModal" placeholder="Ano">
             </div>
             <div class="col-4">
-              <input type="text"  name="valor" class="form-control inputModal" placeholder="Valor">
+              <input type="text"  name="valor" class="form-control inputModal inputValor" placeholder="Valor">
             </div>
         </div>
         <div class="modal-footer">
@@ -122,7 +103,7 @@
     </div>
   </div>
 </div>
-<script src="src/View/scripts/inserirCarro.js"></script>
+<script src="src/View/scripts/customScript.js"></script>
 </body>
 
 </html>
