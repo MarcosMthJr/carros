@@ -65,18 +65,17 @@ composer install
 
 ## Rotas da API
  <p>Rota para inserir um carro</p>
- Method: <p>POST</p>
- ```shell
+ Method: <b>POST</b>
+ 
       localhost/testeConvesWeb/carro
-  ``` 
+ 
 <p>Rota para listar todos os carros</p>
- Method: <p>GET</p>
- ```shell
+ Method: <b>GET</b>
+ 
       localhost/testeConvesWeb/carro
-  ``` 
+  
 <p>Rota para buscar por um carro especificando o id</p>
- Method: <p>GET</p>
- ```shell
-      localhost/testeConvesWeb/carro/{$id}
-  ``` 
+ Method: <b>GET</b>
+
+      localhost/testeConvesWeb/carro/{$id} 
 
